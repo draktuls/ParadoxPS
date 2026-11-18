@@ -1,0 +1,91 @@
+{
+  "actions": [
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "id": "TerminalProfile.SplitAuto"
+    },
+    {
+      "id": "TerminalProfile.SplitVertical",
+      "command": {
+        "split": "vertical",
+        "action": "splitPane",
+        "splitMode": "duplicate"
+      }
+    },
+    {
+      "id": "TerminalProfile.SplitHorizontal",
+      "command": {
+        "split": "horizontal",
+        "action": "splitPane",
+        "splitMode": "duplicate"
+      }
+    }
+  ],
+  "keybindings": [
+    {
+      "id": "TerminalProfile.SplitAuto",
+      "keys": "alt+shift+d"
+    },
+    {
+      "id": "Terminal.DuplicateTab",
+      "keys": "ctrl+shift+t"
+    },
+    {
+      "keys": "alt+shift+v",
+      "id": "TerminalProfile.SplitVertical"
+    },
+    {
+      "keys": "alt+shift+h",
+      "id": "TerminalProfile.SplitHorizontal"
+    },
+    {
+      "keys": "alt+shift+z",
+      "id": "Terminal.TogglePaneZoom"
+    },
+    {
+      "keys": "ctrl+shift+w",
+      "id": "Terminal.ClosePane"
+    },
+    {
+      "keys": "alt+left",
+      "id": "Terminal.MoveFocusLeft"
+    },
+    {
+      "keys": "alt+shift+left",
+      "id": "Terminal.ResizePaneLeft"
+    },
+    {
+      "keys": "alt+right",
+      "id": "Terminal.MoveFocusRight"
+    },
+    {
+      "keys": "alt+shift+right",
+      "id": "Terminal.ResizePaneRight"
+    },
+    {
+      "keys": "alt+up",
+      "id": "Terminal.MoveFocusUp"
+    },
+    {
+      "keys": "alt+shift+up",
+      "id": "Terminal.ResizePaneUp"
+    },
+    {
+      "keys": "alt+down",
+      "id": "Terminal.MoveFocusDown"
+    },
+    {
+      "keys": "alt+shift+down",
+      "id": "Terminal.ResizePaneDown"
+    },
+    {
+      "id": "Terminal.ClosePane",
+      "keys": "ctrl+d"
+    }
+  ]
+}
+

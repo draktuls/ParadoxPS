@@ -1,0 +1,104 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "upgrade": {
+    "source": "cdn",
+    "interval": "168h",
+    "auto": false,
+    "notice": false
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "template": "  ",
+          "foreground": "#100e23",
+          "powerline_symbol": "",
+          "background": "#ffe9aa",
+          "type": "root",
+          "style": "powerline",
+          "background_templates": [
+            "{{ .Env.TERMINAL_PROMPT_Root }}"
+          ]
+        },
+        {
+          "template": " {{ if .Root }}Elevated {{ end }}{{ .UserName }} ",
+          "foreground": "#3B82B5",
+          "powerline_symbol": "",
+          "background": "#ffffff",
+          "type": "session",
+          "style": "powerline",
+          "foreground_templates": [
+            "{{ if .Root }}{{ .Env.TERMINAL_PROMPT_Elevated }}{{ else }}{{ .Env.TERMINAL_PROMPT_User }}{{ end }}"
+          ]
+        },
+        {
+          "options": {
+            "folder_icon": "",
+            "folder_separator_icon": "  ",
+            "style": "full"
+          },
+          "template": " {{ .Path }} ",
+          "foreground": "#BAE6FD",
+          "powerline_symbol": "",
+          "background": "#142B49",
+          "type": "path",
+          "style": "powerline",
+          "foreground_templates": [
+            "{{ .Env.TERMINAL_PROMPT_Path }}"
+          ],
+          "background_templates": [
+            "{{ .Env.TERMINAL_PROMPT_Background }}"
+          ]
+        },
+        {
+          "template": " {{ .HEAD }} ",
+          "foreground": "#8B0000",
+          "powerline_symbol": "",
+          "background": "#95ffa4",
+          "type": "git",
+          "style": "powerline"
+        },
+        {
+          "template": "  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "foreground": "#100e23",
+          "powerline_symbol": "",
+          "background": "#7CC4EF",
+          "type": "python",
+          "style": "powerline",
+          "background_templates": [
+            "{{ .Env.TERMINAL_PROMPT_Python }}"
+          ]
+        },
+        {
+          "template": "  ",
+          "foreground": "#ffffff",
+          "powerline_symbol": "",
+          "background": "#ff8080",
+          "type": "status",
+          "style": "powerline"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "template": "❯ ",
+          "foreground": "#87CEFA",
+          "type": "text",
+          "style": "plain",
+          "foreground_templates": [
+            "{{ .Env.TERMINAL_PROMPT_Accent }}"
+          ]
+        }
+      ],
+      "newline": true
+    }
+  ],
+  "version": 4,
+  "pwd": "osc99"
+}
+
